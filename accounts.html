@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankPro | Accounts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+            <div class="nav-left">
+               <a href="index.html" style="text-decoration: none; color:var(--primary); font-weight:800;">BankPro</a>
+                </div>
+
+            <div class="nav-center">
+                <a href="accounts.html">Accounts</a>
+                <a href="transactions.html">Transactions</a>
+            </div>
+
+            <div class="nav-right">
+                <img src="./assets/icons/search.svg" alt="search">
+                <img src="./assets/icons/user.svg" alt="profile">
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner" style="color:var(--primary); font-weight:800;">
+        <h1>BankPro</h1>
+        <p>Manage Your Accounts</p>
+    </section>
+
+    <div class="container page-wrapper">
+
+        <!-- FILTERS SECTION -->
+        <aside class="filters">
+            <div>
+                <h3>Filter by Account Type</h3>
+                <label><input type="checkbox"> Savings Account</label>
+                <label><input type="checkbox"> Current Account</label>
+                <label><input type="checkbox"> Fixed Deposit</label>
+                <label><input type="checkbox"> Salary Account</label>
+            </div>
+
+            <br>
+
+            <div>
+                <h3>Filter by Status</h3>
+                <label><input type="checkbox"> Active</label>
+                <label><input type="checkbox"> Inactive</label>
+            </div>
+
+            <br>
+
+            <div class="search-box">
+                <h3>Search Accounts</h3>
+                <input type="text" placeholder="Search by name or number">
+            </div>
+        </aside>
+
+        <!-- ACCOUNTS LIST -->
+        <section class="accounts-grid">
+
+            <!-- CARD 1 -->
+            <div class="account-card">
+                <h2>Ashu Kumar</h2>
+                <p>Account No: 9876543210</p>
+                <p>Balance: ₹85,000</p>
+                <p>Status: <span class="badge badge-success">Active</span></p>
+                <a href="single-account.html" class="btn view-btn">View Details</a>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="account-card">
+                <h2>Anil Sharma</h2>
+                <p>Account No: 1234567890</p>
+                <p>Balance: ₹45,200</p>
+                <p>Status: <span class="badge badge-success">Active</span></p>
+                <a href="single-account.html" class="btn view-btn">View Details</a>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="account-card">
+                <h2>Priya Mehta</h2>
+                <p>Account No: 9001122334</p>
+                <p>Balance: ₹1,20,000</p>
+                <p>Status: <span class="badge badge-success">Active</span></p>
+                <a href="single-account.html" class="btn view-btn">View Details</a>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="account-card">
+                <h2>Rahul Verma</h2>
+                <p>Account No: 7008899123</p>
+                <p>Balance: ₹0</p>
+                <p>Status: <span class="badge badge-failed">Inactive</span></p>
+                <a href="single-account.html" class="btn view-btn">View Details</a>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- PARTNER BANKS -->
+    <section class="partners">
+        <div class="partner-track">
+            <img src="./assets/images/partner1.png">
+            <img src="./assets/images/partner2.png">
+            <img src="./assets/images/partner3.png">
+            <img src="./assets/images/partner4.png">
+            <img src="./assets/images/partner5.png">
+
+            <!-- duplicated for infinite slide -->
+            <img src="./assets/images/partner1.png">
+            <img src="./assets/images/partner2.png">
+            <img src="./assets/images/partner3.png">
+            <img src="./assets/images/partner4.png">
+            <img src="./assets/images/partner5.png">
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2 class="section-title">NEWSLETTER</h2>
+        <p>Stay updated with our latest banking news.</p>
+        <input type="email" placeholder="Enter your email">
+        <br><br>
+        <a class="btn">Subscribe</a>
+    </section>
+
+    <!-- SERVICES -->
+    <div class="container">
+        <section class="services">
+            <div class="service-box">
+                <img src="./assets/icons/shield.svg">
+                <h3>Secure Banking</h3>
+                <p>Your safety is our priority.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="./assets/icons/headset.svg">
+                <h3>24x7 Support</h3>
+                <p>Always here to help you.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="./assets/icons/lightning.svg">
+                <h3>Fast Transactions</h3>
+                <p>Transfers in seconds.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h2>BANKPRO</h2>
+
+            <div class="social">
+                <img src="./assets/icons/facebook.png">
+                <img src="./assets/icons/twitter.png">
+                <img src="./assets/icons/youtube.png">
+                <img src="./assets/icons/linkedin.png">
+                <img src="./assets/icons/instagram.png">
+            </div>
+
+            <p>Address: Finance Street, Hyderabad, India</p>
+            <p>Phone: +91 123465789</p>
+            <p>Email: support@bankpro.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
